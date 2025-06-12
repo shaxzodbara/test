@@ -1,80 +1,111 @@
-<!-- Bootstrap-integrated HTML templates -->
-
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <title>Kirish</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Ichki Ishlar Vazirligi — Test</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #004080, #0083c9, #00bfa5);
+            min-height: 100vh;
+            color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 30px 0;
+        }
+        .iiv-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 0 0 10px #000;
+        }
+        .iiv-header img {
+            width: 90px;
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.8));
+        }
+        .iiv-header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 15px;
+            color: #ffe600;
+        }
+
+        .card {
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+
+        .card h5 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .form-check-label {
+            font-weight: 600;
+        }
+
+        #timer {
+            font-size: 18px;
+            font-weight: 700;
+            color: #dc3545;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .btn-success {
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .alert-info {
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-weight: 700;
+        }
+
+        .badge {
+            font-size: 1rem;
+            padding: 0.4em 0.8em;
+        }
+    </style>
 </head>
-<body class="bg-light d-flex align-items-center" style="min-height: 100vh">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="card shadow">
-                <div class="card-body">
-                    <h4 class="card-title mb-4 text-center">Tizimga kirish</h4>
-                    <form method="POST">
-                        <div class="mb-3">
-                            <label class="form-label">Login:</label>
-                            <input type="text" name="username" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Parol:</label>
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Kirish</button>
-                    </form>
-                    {% with messages = get_flashed_messages() %}
-                        {% if messages %}
-                            <div class="alert alert-danger mt-3">{{ messages[0] }}</div>
-                        {% endif %}
-                    {% endwith %}
-                </div>
-            </div>
-        </div>
-    </div>
+<body>
+
+<div class="iiv-header">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="IIV Logotipi" />
+    <h1>Ichki Ishlar Vazirligi</h1>
 </div>
-</body>
-</html>
 
-<!-- test.html -->
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-<div class="container mt-5">
+<div class="container">
     {% if questions %}
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3>Test Boshlanishi</h3>
-            <div id="timer" class="text-danger fw-bold"></div>
-        </div>
-
-        <form method="POST" id="testForm">
+        <div id="timer">⏳ Qolgan vaqt: 60 daqiqa 0 soniya</div>
+        <form method="POST" id="testForm" novalidate>
             {% for q in questions %}
             <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">{{ loop.index }}. {{ q.savol }}</h5>
-                    {% for opt in ['a', 'b', 'c', 'd'] %}
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="q{{ q.id }}" value="{{ q.variantlar[loop.index0] }}" required>
-                            <label class="form-check-label">{{ q.variantlar[loop.index0] }}</label>
-                        </div>
-                    {% endfor %}
-                </div>
+                <h5>{{ loop.index }}. {{ q.savol }}</h5>
+                {% for opt in ['a', 'b', 'c', 'd'] %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q{{ q.id }}" id="q{{ q.id }}{{ opt }}" value="{{ q.variantlar[loop.index0] }}" required>
+                        <label class="form-check-label" for="q{{ q.id }}{{ opt }}">{{ q.variantlar[loop.index0] }}</label>
+                    </div>
+                {% endfor %}
             </div>
             {% endfor %}
-            <button type="submit" class="btn btn-success">Yakunlash</button>
+            <button type="submit" class="btn btn-success w-100">✅ Testni yakunlash</button>
         </form>
 
         <script>
             const startTime = {{ started_at|int }};
-            const duration = 60 * 60;
+            const duration = 60 * 60;  // 60 daqiqa
             const endTime = startTime + duration;
 
             function updateTimer() {
@@ -86,11 +117,12 @@
                 } else {
                     const minutes = Math.floor(remaining / 60);
                     const seconds = remaining % 60;
-                    document.getElementById("timer").innerText = `Qolgan vaqt: ${minutes} daqiqa ${seconds} soniya`;
+                    document.getElementById("timer").innerText = `⏳ Qolgan vaqt: ${minutes} daqiqa ${seconds} soniya`;
                 }
             }
 
             setInterval(updateTimer, 1000);
+            updateTimer();  // Sahifa yuklanganda timer ishga tushsin
         </script>
 
     {% elif result %}
@@ -114,7 +146,6 @@
         {% endfor %}
     {% endif %}
 </div>
+
 </body>
 </html>
-
-<!-- admin.html, savol.html, configure.html, my_results.html fayllari keyingi javobda -->
