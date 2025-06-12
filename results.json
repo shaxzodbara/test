@@ -1,0 +1,686 @@
+[
+    {
+        "answers": {
+            "1": {
+                "correct": true,
+                "correct_answer": "list()",
+                "user_answer": "list()"
+            },
+            "2": {
+                "correct": false,
+                "correct_answer": "Backend",
+                "user_answer": "Frontend"
+            }
+        },
+        "date": "2025-06-12 15:46:27",
+        "score": 1,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": false,
+                "correct_answer": "list()",
+                "user_answer": "sequence()"
+            },
+            "2": {
+                "correct": true,
+                "correct_answer": "Backend",
+                "user_answer": "Backend"
+            }
+        },
+        "date": "2025-06-12 15:46:31",
+        "score": 1,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": true,
+                "correct_answer": "list()",
+                "user_answer": "list()"
+            },
+            "2": {
+                "correct": true,
+                "correct_answer": "Backend",
+                "user_answer": "Backend"
+            }
+        },
+        "date": "2025-06-12 15:49:38",
+        "score": 2,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": true,
+                "correct_answer": "list()",
+                "user_answer": "list()"
+            },
+            "2": {
+                "correct": false,
+                "correct_answer": "Backend",
+                "user_answer": "Frontend"
+            }
+        },
+        "autofinished": false,
+        "date": "2025-06-12 15:56:50",
+        "score": 1,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": true,
+                "correct_answer": "list()",
+                "user_answer": "list()"
+            },
+            "2": {
+                "correct": true,
+                "correct_answer": "Backend",
+                "user_answer": "Backend"
+            }
+        },
+        "autofinished": false,
+        "date": "2025-06-12 15:59:09",
+        "score": 2,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": false,
+                "correct_answer": "list()",
+                "user_answer": "sequence()"
+            },
+            "2": {
+                "correct": true,
+                "correct_answer": "Backend",
+                "user_answer": "Backend"
+            }
+        },
+        "autofinished": false,
+        "date": "2025-06-12 16:01:22",
+        "score": 1,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "answers": {
+            "1": {
+                "correct": true,
+                "correct_answer": "list()",
+                "user_answer": "list()"
+            },
+            "2": {
+                "correct": false,
+                "correct_answer": "Backend",
+                "user_answer": "Frontend"
+            }
+        },
+        "date": "2025-06-12 16:08:15",
+        "score": 1,
+        "total": 2,
+        "username": "user1"
+    },
+    {
+        "username": "shaxzod",
+        "score": 1,
+        "total": 5,
+        "details": [
+            {
+                "savol": "Python asoschisi kim?",
+                "user_answer": "Guido van Rossum",
+                "correct_answer": "Guido van Rossum",
+                "correct": true
+            },
+            {
+                "savol": "Yerning tabiiy yo\u00e2\u20ac\u02dcldoshi?",
+                "user_answer": "Yulduz",
+                "correct_answer": "Oy",
+                "correct": false
+            },
+            {
+                "savol": "HTML nima?",
+                "user_answer": "Browser",
+                "correct_answer": "Markup tili",
+                "correct": false
+            },
+            {
+                "savol": "Poytaxti O'zbekiston?",
+                "user_answer": "Buxoro",
+                "correct_answer": "Toshkent",
+                "correct": false
+            },
+            {
+                "savol": "2 + 2 nechchi?",
+                "user_answer": "3",
+                "correct_answer": "4",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "username": "1",
+        "score": 0,
+        "total": 5,
+        "details": [
+            {
+                "savol": "HTML nima?",
+                "user_answer": "Programlash tili",
+                "correct_answer": "Markup tili",
+                "correct": false
+            },
+            {
+                "savol": "Yerning tabiiy yo\u00e2\u20ac\u02dcldoshi?",
+                "user_answer": "Yulduz",
+                "correct_answer": "Oy",
+                "correct": false
+            },
+            {
+                "savol": "2 + 2 nechchi?",
+                "user_answer": "3",
+                "correct_answer": "4",
+                "correct": false
+            },
+            {
+                "savol": "Python asoschisi kim?",
+                "user_answer": "Bill Gates",
+                "correct_answer": "Guido van Rossum",
+                "correct": false
+            },
+            {
+                "savol": "Poytaxti O'zbekiston?",
+                "user_answer": "Buxoro",
+                "correct_answer": "Toshkent",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 1,
+        "total": 5,
+        "details": [
+            {
+                "savol": "Poytaxti O'zbekiston?",
+                "user_answer": "Toshkent",
+                "correct_answer": "Toshkent",
+                "correct": true
+            },
+            {
+                "savol": "Python asoschisi kim?",
+                "user_answer": "Bill Gates",
+                "correct_answer": "Guido van Rossum",
+                "correct": false
+            },
+            {
+                "savol": "Yerning tabiiy yo\u2018ldoshi?",
+                "user_answer": "Yulduz",
+                "correct_answer": "Oy",
+                "correct": false
+            },
+            {
+                "savol": "HTML nima?",
+                "user_answer": "CSS",
+                "correct_answer": "Markup tili",
+                "correct": false
+            },
+            {
+                "savol": "Yerning tabiiy yo\u2018ldoshi?",
+                "user_answer": "Quyosh",
+                "correct_answer": "Oy",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "username": "1",
+        "score": 0,
+        "total": 0,
+        "details": []
+    },
+    {
+        "username": "1",
+        "score": 0,
+        "total": 0,
+        "details": []
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 0,
+        "details": []
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 1,
+        "details": [
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "matematika"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 1,
+        "details": [
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "matematika"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 1,
+        "details": [
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "matematika"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 2,
+        "details": [
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "b",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1441",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "matematika"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 0,
+        "total": 3,
+        "details": [
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "b",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "a",
+                "correct": false,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 4,
+        "total": 4,
+        "details": [
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "1231",
+                "correct": true,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 3,
+        "total": 4,
+        "details": [
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "123123",
+                "correct_answer": "1231",
+                "correct": false,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 3,
+        "total": 4,
+        "details": [
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "232",
+                "correct_answer": "1231",
+                "correct": false,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "shaxzod",
+        "score": 4,
+        "total": 4,
+        "details": [
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "1231",
+                "correct": true,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "2",
+        "score": 3,
+        "total": 4,
+        "details": [
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "2",
+                "correct_answer": "4",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "1231",
+                "correct": true,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "doni",
+        "score": 0,
+        "total": 4,
+        "details": [
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "qwrt",
+                "correct_answer": "q",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1441",
+                "correct_answer": "1336",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "2",
+                "correct_answer": "4",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "12312",
+                "correct_answer": "1231",
+                "correct": false,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "doni",
+        "score": 1,
+        "total": 4,
+        "details": [
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "12312",
+                "correct_answer": "1336",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "qw",
+                "correct_answer": "q",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "2",
+                "correct_answer": "4",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "1231",
+                "correct": true,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "doni",
+        "score": 3,
+        "total": 4,
+        "details": [
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "q",
+                "correct_answer": "q",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1336",
+                "correct_answer": "1336",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "232",
+                "correct_answer": "1231",
+                "correct": false,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "3",
+        "score": 2,
+        "total": 4,
+        "details": [
+            {
+                "savol": "2 + 2 = ",
+                "user_answer": "4",
+                "correct_answer": "4",
+                "correct": true,
+                "subject": "matematika"
+            },
+            {
+                "savol": "asdqweqweqw",
+                "user_answer": "qwrt",
+                "correct_answer": "q",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "amir temu qachon tugilgan",
+                "user_answer": "1231",
+                "correct_answer": "1336",
+                "correct": false,
+                "subject": "matematika"
+            },
+            {
+                "savol": "dasdasd",
+                "user_answer": "1231",
+                "correct_answer": "1231",
+                "correct": true,
+                "subject": "huquq"
+            }
+        ]
+    },
+    {
+        "username": "ibrohim",
+        "score": 0,
+        "total": 0,
+        "details": []
+    },
+    {
+        "username": "33",
+        "score": 1,
+        "total": 1,
+        "details": [
+            {
+                "savol": "adsasd",
+                "user_answer": "1",
+                "correct_answer": "1",
+                "correct": true,
+                "subject": "tarix"
+            }
+        ]
+    }
+]
