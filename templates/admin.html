@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <title>Admin Panel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Ichki Ishlar Vazirligi — Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #004080, #0083c9, #00bfa5);
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.55);
+            z-index: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding-bottom: 50px;
+        }
+        h2 {
+            color: #ffe600;
+            text-shadow: 0 0 10px #ffe600;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            color: white;
+        }
+        .card h5.card-title {
+            font-weight: 700;
+            color: #ffe600;
+            text-shadow: 0 0 10px #ffe600;
+        }
+        input.form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        input.form-control:focus {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            box-shadow: none;
+            border: none;
+        }
+        button.btn-primary, .btn-warning, .btn-danger, .btn-outline-primary, .btn-outline-secondary, .btn-outline-danger {
+            border-radius: 15px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+        button.btn-primary {
+            background-color: #004080;
+            border: none;
+        }
+        button.btn-primary:hover {
+            background-color: #002050;
+        }
+        .btn-warning {
+            background-color: #ffc107;
+            border: none;
+            color: #212529;
+        }
+        .btn-warning:hover {
+            background-color: #e0a800;
+            color: #212529;
+        }
+        .btn-danger {
+            background-color: #cc0000;
+            border: none;
+        }
+        .btn-danger:hover {
+            background-color: #990000;
+        }
+        .btn-outline-primary {
+            color: #004080;
+            border-color: #004080;
+        }
+        .btn-outline-primary:hover {
+            background-color: #004080;
+            color: white;
+        }
+        .btn-outline-secondary {
+            color: #0083c9;
+            border-color: #0083c9;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #0083c9;
+            color: white;
+        }
+        .btn-outline-danger {
+            color: #cc0000;
+            border-color: #cc0000;
+        }
+        .btn-outline-danger:hover {
+            background-color: #cc0000;
+            color: white;
+        }
+        ul.list-group li.list-group-item {
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        table.table {
+            background: rgba(0, 0, 0, 0.25);
+            color: white;
+            border-radius: 15px;
+        }
+        table.table th, table.table td {
+            vertical-align: middle;
+        }
+        thead.table-light {
+            background-color: rgba(255, 255, 255, 0.3) !important;
+            color: #004080 !important;
+            font-weight: 700;
+        }
+        .alert-info {
+            background-color: rgba(255, 255, 0, 0.3);
+            color: #222200;
+            border-radius: 12px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        form {
+            margin: 0;
+        }
+    </style>
 </head>
-<body class="bg-light">
+<body>
 <div class="container mt-5">
-    <h2 class="mb-4">👨‍💼 Admin Panel</h2>
+    <h2>👨‍💼 Admin Panel</h2>
 
     <!-- Foydalanuvchi qo‘shish -->
     <div class="card mb-4">
@@ -16,10 +152,10 @@
             <form method="POST">
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <input type="text" name="username" class="form-control" placeholder="Login" required>
+                        <input type="text" name="username" class="form-control" placeholder="Login" required />
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="password" class="form-control" placeholder="Parol" required>
+                        <input type="text" name="password" class="form-control" placeholder="Parol" required />
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Qo‘shish</button>
@@ -86,7 +222,7 @@
                         <span>{{ q['savol'] }}</span>
                         <div class="d-flex gap-2">
                             <a href="/edit-question?subject={{ subject }}&savol={{ q['savol'] | urlencode }}" class="btn btn-sm btn-warning">✏️ Tahrirlash</a>
-                            <form method="POST" action="/delete-question">
+                            <form method="POST" action="/delete-question" class="m-0">
                                 <input type="hidden" name="subject" value="{{ subject }}">
                                 <input type="hidden" name="savol" value="{{ q['savol'] }}">
                                 <button type="submit" class="btn btn-sm btn-danger">🗑 O‘chirish</button>
